@@ -35,7 +35,7 @@ function StatCardSkeleton() {
 }
 
 export default function AdminDashboard() {
-  const { data, isLoading } = useSWR('/api/admin/stats', fetcher)
+  const { data, isLoading } = useSWR('/api/admin/stats', fetcher) || null
 
   const stats = [
     {
